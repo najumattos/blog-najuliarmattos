@@ -109,3 +109,12 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+.cv-item {
+  background-color: #1e242e; /* Fundo levemente mais claro que o main */
+  border: 1px solid #2d3542;  /* Borda sutil para dar profundidade */
+  border-radius: 8px;         /* Arredondamento dos cantos */
+  padding: 16px;              /* Espaçamento interno */
+  margin-bottom: 15px;        /* Espaço entre um card e outro */
+   margin-top: 15px;        /* Espaço entre um card e outro */
+}

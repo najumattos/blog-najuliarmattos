@@ -1,11 +1,17 @@
 import './App.css'
-import  ProfileCard  from "./screens/ProfileCard";
+import  ProfileAna  from "./screens/ProfileAna";
+import ProfileTainara from "./screens/ProfileTainara";
 
 function App() {
 
 return (
     <div className="App">
-      <ProfileCard></ProfileCard> 
+      <section className="cv-item">
+      <ProfileAna/>
+      </section> 
+       <section className="cv-item">
+      <ProfileTainara/>
+      </section>      
     </div>
   );
 }

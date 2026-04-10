@@ -1,15 +1,19 @@
 .profile-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  background-color: #1a2634; 
-  padding: 20px;
+  justify-content: space-between;
+  padding: 15px;
   border-radius: 8px;
-  gap: 25px;
+  gap: 15px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
-  max-width: fit-content;
+  flex-direction: row;
 }
 
+.nome-foto{
+  display: flex;
+  align-items: center;  
+}
 .avatar-wrapper {
   width: 120px;
   height: 120px;
@@ -31,11 +35,12 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  align-items: flex-start;
 }
 
 .profile-name {
   margin: 0;
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -69,4 +74,56 @@
 
 .nav-link:hover {
   color: #60a5fa; 
+}
+
+.section-cv {
+  margin-bottom: 30px;
+}
+
+.section-header {
+  border-left: 4px solid #3c8dbc;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.cv-item {
+  margin-bottom: 20px;
+  padding-left: 19px; /* Alinha o texto com o título acima */
+}
+
+.cv-item-header {
+  display: flex;
+  justify-content: space-between; /* Título na esquerda, período na direita */
+  align-items: baseline;
+  flex-wrap: wrap; /* Para telas de celular não quebrarem */
+  gap: 10px;
+}
+
+.item-titulo {
+  font-size: 1.1rem;
+  color: #3c8dbc; /* Cor destaque para o cargo/curso */
+  margin: 0;
+  text-align: justify; /* Opcional: deixa o texto alinhado como na imagem */
+}
+
+.item-periodo {
+  font-size: 0.85rem;
+  color: #888;
+  font-weight: bold;
+}
+
+.item-descricao {  
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.5;
+   margin: 0;
+  font-size: 1rem;
+  color: #ccc; /* Um cinza claro para o corpo do texto ficar mais suave */
+  text-align: justify; /* Opcional: deixa o texto alinhado como na imagem */
 }

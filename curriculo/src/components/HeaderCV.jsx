@@ -4,10 +4,11 @@ import './Style.css';
 const HeaderCV = ({ profile, redeSocial }) => {
   return (
     <article className="profile-container">
-        <header className="foto-titulo">
+      
+      <section className='nome-foto'>
       <figure className="avatar-wrapper">
           <img
-            src={profile.img}
+            src={`/img/${profile.img}`}
             alt={`Foto de ${profile.nome}`}
             className="profile-image"
           />
@@ -19,20 +20,25 @@ const HeaderCV = ({ profile, redeSocial }) => {
             {profile.titulo}
           </p>
         </div>
-<p>{profile.descricao}</p>
+        </section>
 
-      </header>
+
+   
       <nav className="profile-nav">
-          <a href={redeSocial.emailPrincipal} className="nav-link">
+          <a href={`mailto:${redeSocial.emailPrincipal}`} className="nav-link">
             {redeSocial.emailPrincipal}
           </a>
-          <a href={redeSocial.github} target="_blank" rel="noopener noreferrer" className="nav-link">
+          <a href={redeSocial.emailSecundario} className="nav-link">
+            {redeSocial.emailSecundario}
+          </a>
+          <a href={`https://${redeSocial.github}`} target="_blank" rel="noopener noreferrer" className="nav-link">
            {redeSocial.github}
           </a>
-          <a href={redeSocial.linkedin} target="_blank" rel="noopener noreferrer" className="nav-link">
+          <a href={`https://${redeSocial.linkedin}`} target="_blank" rel="noopener noreferrer" className="nav-link">
             {redeSocial.linkedin}
           </a>
         </nav>
+        <p className="descricao">{profile.descricao}</p>
     </article>
   )
 }
