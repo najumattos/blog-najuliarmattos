@@ -1,0 +1,28 @@
+[
+  {
+    "id": "3",
+    "titulo": "MVC X DDD: Arquiteturas de Software e Metodologias de Design",
+    "dataPostagem": "2026-04-30",
+    "autor": "Ana Julia Mattos",
+    "caminhoArquivoMd": "posts/MVCxDDD.md",
+    "descricao": "Organizar pastas e definir a comunicação entre serviços nem sempre é fácil pois cada projeto exige uma estrutura única. Neste artigo você verá as principais arquiteturas e metodologias de design e suas combinações."    
+  },
+  {
+    "id": "2",
+    "titulo": "Hooks Customizados: Reutilizando Lógica em React",
+    "dataPostagem": "2024-04-28",
+    "autor": "Seu Nome",
+    "caminhoArquivoMd": "posts/custom-hooks.md",
+    "descricao": "Descubra como criar hooks customizados para isolar lógica de negócio e tornar seus componentes mais simples.",
+    "tags": ["React", "Hooks", "JavaScript"]
+  },
+  {
+    "id": "1",
+    "titulo": "Single Responsibility Principle (SRP) na Prática",
+    "dataPostagem": "2024-04-20",
+    "autor": "Seu Nome",
+    "caminhoArquivoMd": "posts/srp-in-practice.md",
+    "descricao": "Entenda como aplicar o SRP em seus componentes React para manter o código organizado e fácil de manter.",
+    "tags": ["Architecture", "SOLID", "React"]
+  }
+]

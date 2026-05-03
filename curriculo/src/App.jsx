@@ -1,16 +1,24 @@
 import './App.css'
-import  ProfileAna  from "./screens/ProfileAna";
-import ProfileTainara from "./screens/ProfileTainara";
+import { useEffect, useState } from 'react';
+import { BlogContainer } from "./screens/Blog/BlogContainer";
+import Navbar from './components/Navbar';
+import ProfileAna from './screens/ProfileAna';
 
 function App() {
+  const getViewFromHash = () => (window.location.hash === '#curriculo' ? 'curriculo' : 'blog');
+  const [view, setView] = useState(getViewFromHash);
 
-return (
-    <div className="App">
+  useEffect(() => {
+    const onHashChange = () => setView(getViewFromHash());
+    window.addEventListener('hashchange', onHashChange);
+    return () => window.removeEventListener('hashchange', onHashChange);
+  }, []);
+
+  return (
+    <div className="App">    
+      <Navbar />
       <section className="cv-item">
-      <ProfileAna/>
-      </section> 
-       <section className="cv-item">
-      <ProfileTainara/>
+        {view === 'curriculo' ? <ProfileAna /> : <BlogContainer />}
       </section>      
     </div>
   );
