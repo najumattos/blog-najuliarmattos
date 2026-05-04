@@ -21,7 +21,7 @@ const HeaderCV = ({
       <section className='nome-foto'>
       <figure className="avatar-wrapper">
           <img
-            src={`../assets/${profile.img}`}
+            src={`../../public/img/${profile.img}`}
             alt={`Foto de ${profile.nome}`}
             className="profile-image"
           />
