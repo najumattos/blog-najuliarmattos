@@ -24,7 +24,7 @@ export const useBlogPosts = () => {
         setLoading(true);
         setError(null);
         
-        const response = await fetch('/posts.json');
+        const response = await fetch('/data/posts.json');
         if (!response.ok) throw new Error('Erro ao carregar posts');
         
         const data = await response.json();

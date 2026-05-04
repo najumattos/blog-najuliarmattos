@@ -9,8 +9,8 @@ const HeaderCV = ({
     descricao: 'Apaixonada por tecnologia e inovaçãoDesenvolvedora focada em arquitetura de sistemas e qualidade de código (SOLID, Testes Unitários). Responsável por pela API Connectamente com implementação de autenticação JWT, integração de Docker e fluxos de CI/CD via GitHub Actions. Experiência prática em React e Metodologias Ágeis (Kanban). Minha vivência anterior no comércio e como líder de turma me proporcionou soft skills diferenciadas em comunicação, liderança e resolução de problemas.'
   }, 
   redeSocial = {
-    emailPrincipal: 'ana@example.com',
-    emailSecundario: 'ana.mattos@example.com',
+    emailPrincipal: 'anareismattos.dev@gmail.com',
+    emailSecundario: 'anajuliamattos02@gmail.com  ',
     github: 'github.com/anajulia',
     linkedin: 'linkedin.com/in/anajulia'
   }

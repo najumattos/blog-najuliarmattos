@@ -1,0 +1,75 @@
+/* Layout básico do formulário de contato
+   - Duas colunas: esquerda com 3 inputs, direita com textarea alinhada à altura
+   - Botão alinhado à direita abaixo do textarea
+   - Evita definir cores/ fontes específicas para herdar o estilo global
+*/
+.contact-form {
+  width: 100%;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.left-col label,
+.right-col label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.95rem;
+}
+
+.left-col input,
+.right-col textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.left-col input {
+  height: 3rem; /* controla a altura dos 3 campos da esquerda */
+}
+
+.right-col textarea {
+  /* altura aproximada equivalente aos 3 inputs + gaps */
+  min-height: calc(3 * 3rem + 2 * 0.75rem);
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end; /* alinha o botão à direita */
+  margin-top: 0.75rem;
+}
+
+.submit-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: transparent; /* herda cores do tema */
+  color: inherit;
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .right-col textarea {
+    min-height: auto;
+  }
+}
