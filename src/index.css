@@ -112,11 +112,3 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
-
-.cv-item {
-  background: transparent;
-  border: 0;
-  border-radius: 0;
-  padding: 16px;
-  margin: 15px 0;
-}

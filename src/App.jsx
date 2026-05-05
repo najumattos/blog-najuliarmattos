@@ -10,7 +10,7 @@ function App() {
     <HashRouter>
       <div className="App">
         <Navbar />
-        <section className="cv-item">
+        <section>
           <Routes>
             <Route path="/" element={<BlogContainer />} />
             <Route path="/artigos" element={<BlogContainer />} />
