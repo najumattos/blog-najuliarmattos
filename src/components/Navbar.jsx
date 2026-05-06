@@ -10,9 +10,9 @@ import './Navbar.css';
  */
 export function Navbar({ links }) {
   const defaultLinks = [
-    { to: '/artigos', label: 'Artigos' },
-    { to: '/contato', label: 'Contato' },
-    { to: '/sobre', label: 'Sobre' },
+    { to: '/artigos', label: '{ Artigos' },
+    { to: '/contato', label: ' Contato' },
+    { to: '/sobre', label: ' Sobre }' },
   ];
   const navLinks = Array.isArray(links) && links.length ? links : defaultLinks;
 
