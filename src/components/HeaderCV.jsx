@@ -1,10 +1,10 @@
 import React from 'react';
 import { Mail, Globe, Code } from 'lucide-react';
+import profileImage from '../assets/profile.png';
 import './HeaderCV.css';
 
 const HeaderCV = ({
   profile = {
-    img: 'profile.png',
     nome: 'Ana Julia',
     titulo: 'Desenvolvedora Backend',
     descricao: 'Desenvolvedora FOCADA em arquitetura de sistemas e qualidade de código, priorizando a implementação de Clean Code, SOLID e DRY para garantir sistemas sustentáveis. Tenho experiência prática no desenvolvimento de APIs robustas utilizando Thin Controllers, Result Pattern e Fluent API, focando em uma lógica de negócio clara e desacoplada. Minha trajetória anterior no comércio e liderança de turma consolidou soft skills em comunicação e resolução de problemas, que hoje aplico em ambientes ágeis (Kanban).'
@@ -26,7 +26,7 @@ const HeaderCV = ({
 
         <figure className="avatar-wrapper">
           <img
-            src={`../../public/img/${profile.img}`}
+            src={profileImage}
             alt={`Foto de ${profile.nome}`}
             className="profile-image"
           />
