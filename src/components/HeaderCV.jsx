@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mail, Globe, Code } from 'lucide-react';
-import profileImage from '../assets/profileImage.png';
+import profileImage from '../assets/profile.png';
 import './HeaderCV.css';
 
 const HeaderCV = ({
