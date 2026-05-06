@@ -1,6 +1,9 @@
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import remarkFootnotes from 'remark-footnotes';
 import { Calendar, User } from 'lucide-react';
+import highlightJs from 'highlight.js';
+import 'highlight.js/styles/atom-one-dark.css';
 import ScrollToTopButton from '../../components/ScrollToTopButton';
 import MermaidBlock from '../../components/MermaidBlock';
 
@@ -34,7 +37,7 @@ export function BlogPostDetailView({ post, content, error }) {
 
       <div className="post-content">
         <ReactMarkdown
-          remarkPlugins={[remarkGfm]}
+          remarkPlugins={[remarkGfm, remarkFootnotes]}
           components={{
             a: ({ href, children }) => (
               <a href={href} target="_blank" rel="noopener noreferrer">
@@ -81,13 +84,41 @@ export function BlogPostDetailView({ post, content, error }) {
                 return <MermaidBlock>{codeString.replace(/\n$/, '')}</MermaidBlock>;
               }
 
-              // Caso contrário, renderizar como código normal
+              // Aplicar syntax highlighting com highlight.js
+              let highlightedCode = children;
+              try {
+                if (language && highlightJs.getLanguage(language)) {
+                  const highlighted = highlightJs.highlight(
+                    Array.isArray(children) ? children.join('') : String(children),
+                    { language, ignoreIllegals: true }
+                  );
+                  highlightedCode = (
+                    <pre>
+                      <code 
+                        className={`hljs language-${language}`}
+                        dangerouslySetInnerHTML={{ __html: highlighted.value }}
+                      />
+                    </pre>
+                  );
+                }
+              } catch (err) {
+                console.warn(`Erro ao highlightear código ${language}:`, err);
+              }
+
+              // Retornar código com ou sem highlight
+              if (highlightedCode !== children) {
+                return highlightedCode;
+              }
+
               return (
                 <code className={className} {...props}>
                   {children}
                 </code>
               );
             },
+            sup: ({ children }) => (
+              <sup className="footnote-ref">{children}</sup>
+            ),
           }}
         >
           {content}
