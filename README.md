@@ -1,16 +1,20 @@
-# React + Vite
+# Bem Vindo ao meu ecossistema tecnologico :)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto nasceu da necessidade de escalar meu repositório de estudos. O que antes era apenas uma centralização de arquivos tornou-se um desafio de organização e busca. Desenvolvi este site para transformar esse volume de conhecimento em uma experiência de leitura fluida, prática e visualmente organizada.
 
-Currently, two official plugins are available:
+## Este projeto utiliza as seguintes tecnologias:
+* React 19.2.4 - Framework principal;
+* React Router DOM 7.14.2 - Roteamento de páginas;
+* React Markdown 9.0.1 - Renderização de Markdown.
+* Vite 8.0.4 - Build tool e dev server;
+* @vitejs/plugin-react 6.0.1 - Suporte React no Vite;
+* Copilot e Gemini para produtividade.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Suporte e Renderização de Markdown
+* Mermaid 11.14.0 - Geração de diagramas;
+* highlight.js 11.11.1 - Syntax highlighting para código;
+* remark-gfm 4.0.1 - Markdown com tabelas e strikethrough;
+* remark-footnotes 4.0.1 - Suporte a footnotes em Markdown.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Repositorio
+https://github.com/najumattos/blog-najuliarmattos
