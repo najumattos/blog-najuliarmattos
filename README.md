@@ -1,5 +1,3 @@
-# Bem Vindo ao meu ecossistema tecnologico :)
-
 Este projeto nasceu da necessidade de escalar meu repositório de estudos. O que antes era apenas uma centralização de arquivos tornou-se um desafio de organização e busca. Desenvolvi este site para transformar esse volume de conhecimento em uma experiência de leitura fluida, prática e visualmente organizada.
 
 ## Este projeto utiliza as seguintes tecnologias:
