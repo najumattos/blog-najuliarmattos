@@ -14,5 +14,6 @@ Este projeto nasceu da necessidade de escalar meu repositório de estudos. O que
 * remark-gfm 4.0.1 - Markdown com tabelas e strikethrough;
 * remark-footnotes 4.0.1 - Suporte a footnotes em Markdown.
 
-## Repositorio
-https://github.com/najumattos/blog-najuliarmattos
+## [saiba-mais]
+
+[saiba-mais]: https://www.linkedin.com/feed/update/urn:li:activity:7457825912437510144/
