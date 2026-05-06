@@ -1,4 +1,12 @@
-[
+[  
+    {
+    "id": "0880",
+    "titulo": "# Programador <---> Engenheiro de Software",
+    "dataPostagem": "2026-05-06",
+    "autor": "Ana Julia Reis de Mattos",
+    "caminhoArquivoMd": "posts/POST0880.md",
+    "caminhoArquivoGithub":"https://github.com/najumattos/blog-najuliarmattos/blob/main/public/posts/POST0880.md"
+  },
   {
     "id": "1",
     "titulo": "MVC X DDD: Arquiteturas de Software e Metodologias de Design",
