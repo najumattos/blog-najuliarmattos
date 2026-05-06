@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useMemo } from 'react';
 
 /**
  * Hook customizado: useBlogPosts
@@ -69,12 +69,12 @@ export const useBlogPosts = () => {
     }
   }, [posts]);
 
-  const deselectPost = () => {
+  const deselectPost = useCallback(() => {
     setSelectedPost(null);
     setMarkdownContent('');
-  };
+  }, []);
 
-  return {
+  return useMemo(() => ({
     posts,
     selectedPost,
     markdownContent,
@@ -82,5 +82,5 @@ export const useBlogPosts = () => {
     error,
     selectPost,
     deselectPost,
-  };
+  }), [posts, selectedPost, markdownContent, loading, error, selectPost, deselectPost]);
 };

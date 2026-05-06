@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams, useLocation } from 'react-router-dom';
 import { useBlogPosts } from '../../hooks/useBlogPosts';
 import { BlogListView } from './BlogListView';
 import { BlogPostDetailView } from './BlogPostDetailView';
@@ -13,6 +13,7 @@ import { BlogPostDetailView } from './BlogPostDetailView';
 export function BlogContainer() {
   const navigate = useNavigate();
   const { postId } = useParams();
+  const location = useLocation();
   const { 
     posts, 
     selectedPost, 
@@ -36,7 +37,11 @@ export function BlogContainer() {
     navigate(`/post/${selectedPostId}`);
   };
 
-  if (postId && selectedPost) {
+  // Se está em "/" ou "/artigos" (sem postId), sempre mostra lista
+  // mesmo que selectedPost ainda esteja em estado anterior
+  const isListView = !postId || location.pathname === '/' || location.pathname === '/artigos';
+
+  if (!isListView && selectedPost) {
     return (
       <BlogPostDetailView 
         post={selectedPost}
