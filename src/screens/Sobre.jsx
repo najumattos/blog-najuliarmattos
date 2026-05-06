@@ -7,7 +7,6 @@ import './style.css';
 export default function Sobre() {
   return (
     <div className="container">
-      <BackButton />
       <h1>Sobre este Blog</h1>
       <div className="content">
         <ReactMarkdown remarkPlugins={[remarkGfm]}>
