@@ -1,5 +1,3 @@
->FDEVS 2025 – Trilha Backend (versão completa no Github)
-
 
 ## CONCEITOS GIT
 
