@@ -86,5 +86,13 @@
     "autor": "Ana Julia Reis de Mattos",
     "caminhoArquivoMd": "posts/POST10.md",
     "caminhoArquivoGithub":"https://github.com/najumattos/Estudos-Teoricos/blob/main/old/GitGithub.pdf"
-  }
+  },
+  {
+    "id": "11",
+    "titulo": "Princípios SOLID",
+    "dataPostagem": "2026-05-12",
+    "autor": "Ana Julia Reis de Mattos",
+    "caminhoArquivoMd": "posts/POST11.md",
+    "https://github.com/najumattos/blog-najuliarmattos/blob/main/public/posts/POST11.md"
+   }
 ]
