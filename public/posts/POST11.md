@@ -327,3 +327,4 @@ Todos os principios conversam entre si, é menos complicado do que parece e o pr
 
 O SOLID é uma ferramenta para lidar com a **mudança**. Se você aplica SOLID em um código que não vai mudar, você está apenas adicionando complexidade (mais arquivos, mais saltos de memória, mais dificuldade de depuração). SOLID é indispensavel mas cuidado para não criar um **Design prematuro** ao tentar aplicar todos os princípios de forma rigorosa logo no primeiro dia, criando dezenas de interfaces e classes pequenas antes mesmo de entender o domínio do problema. o SOLID serve para facilitar a evolução, mas o excesso dele antes da hora vira um obstáculo.
 
+[LSP]:https://youtu.be/kt1AqWcxoA0?si=iuEX1AAVmbUWR_sW
