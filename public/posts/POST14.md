@@ -203,8 +203,11 @@ Se `não for sucesso` a lanchonete não explode apenas exibe o conteúdo de `res
 > O envelope do Result deve ser imutável; quem consome apenas lê o resultado, nunca altera o que está lá dentro
 
 ## Como o Result trabalha com o Try/Catch?
-```md
-[ Método A (Tem try-catch?) ] <-- Se não, o programa crasha aqui ▲ │ (O erro sobe para cá) │ [ Método B (Tem try-catch?) ] <-- Se não tiver, o erro continua subindo ▲ │ (O erro nasce aqui e sobe) │ [ Método C (Estourou o throw!) ]
+```mermaid
+flowchart LR
+	C["Metodo C (Estourou o throw!)"] -->|"erro nasce aqui e sobe"| B["Metodo B (Tem try-catch?)"]
+	B -->|"se nao tiver, erro continua subindo"| A["Metodo A (Tem try-catch?)"]
+	A -->|"se nao tiver, programa crasha aqui"| Crash["Programa crasha aqui"]
 ```
 
 Eles são **parceiros com responsabilidades diferentes**. O _Result Pattern_ nasceu justamente para evitar o "efeito dominó" de destruição das exceções aconteça por motivos bobos (como uma senha errada ou um cartão recusado).
@@ -238,7 +241,7 @@ static Result<string> FazerPedido(string nomeLanche) {
 | Uso Ideal| Situações **excepcionais** e imprevisíveis (infraestrutura, falta de memória, queda de rede) | Regras de **negócio** e fluxos esperados (validação de formulário, usuário não encontrado) |
 
 ## Conclusão
-A jornada pelo entendimento do tratamento de erros — saindo do uso tradicional do `try-catch` até a implementação do _Result Pattern_ e os conceitos de _Railway Oriented Programming (ROP)_ — transforma profundamente a qualidade e a resiliência de um software.
+A jornada pelo entendimento do tratamento de erros — saindo do uso tradicional do `try-catch` até a implementação do _Result Pattern_ — transforma profundamente a qualidade e a resiliência de um software.
 
 **O próximo passo evolutivo envolve maturidade e robustez:** substituir implementações manuais por bibliotecas consolidadas no ecossistema (como `ErrorOr` ou `FluentResults`),  e mergulhar a fundo em **logs estruturados e observabilidade**. Afinal, converter uma exceção em um dado seguro para o usuário só é uma estratégia perfeita quando garantimos que o rastro técnico do erro foi devidamente registrado, monitorado e mapeado para a equipe de desenvolvimento.
 
