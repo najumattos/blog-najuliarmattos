@@ -1,5 +1,3 @@
-# Tratamento de Erros e Exceções
-
 No desenvolvimento de software, a resiliência e a previsibilidade são fundamentais. **Um sistema não se destaca apenas por como executa suas tarefas quando tudo dá certo, mas sim por como reage quando as coisas dão errado**.
 
 Este guia aborda a evolução das estratégias de controle de fluxo e gerenciamento de falhas  desde os mecanismos nativos e tradicionais de **Tratamento de Exceções (`try-catch-finally` e `throw`)** — ideais para conter desastres imprevisíveis de infraestrutura —, até padrões de design avançados como o **Result Pattern**.  Essas duas abordagens deixam de ser concorrentes para se tornarem aliadas estratégicas, separando erros técnicos de infraestrutura de regras explícitas de negócio, garantindo um código limpo, performático e imutável.
