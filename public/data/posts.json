@@ -118,5 +118,13 @@
     "autor": "Ana Julia Reis de Mattos",
     "caminhoArquivoMd": "posts/POST14.md",
     "caminhoArquivoGithub": "https://github.com/najumattos/blog-najuliarmattos/blob/main/public/posts/POST14.md"
+   },
+   {
+    "id": "15",
+    "titulo": "CI — Continuous Integration (Integração Contínua)",
+    "dataPostagem": "2026-06-02",
+    "autor": "Ana Julia Reis de Mattos",
+    "caminhoArquivoMd": "posts/POST15.md",
+    "caminhoArquivoGithub": "https://github.com/najumattos/blog-najuliarmattos/blob/main/public/posts/POST15.md"
    }
 ]
