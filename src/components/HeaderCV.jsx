@@ -12,8 +12,8 @@ const HeaderCV = ({
   redeSocial = {
     emailPrincipal: 'anareismattos.dev@gmail.com',
     emailSecundario: 'anajuliamattos02@gmail.com',
-    github: 'github.com/anajulia',
-    linkedin: 'linkedin.com/in/anajulia'
+    github: 'github.com/najumattos',
+    linkedin: 'linkedin.com/in/anajuliamattos'
   }
 }) => {
   return (
