@@ -126,5 +126,13 @@
     "autor": "Ana Julia Reis de Mattos",
     "caminhoArquivoMd": "posts/POST15.md",
     "caminhoArquivoGithub": "https://github.com/najumattos/blog-najuliarmattos/blob/main/public/posts/POST15.md"
+   },
+   {
+    "id": "16",
+    "titulo": "Fundamentos da Inteligência Artificial",
+    "dataPostagem": "2026-07-25",
+    "autor": "Ana Julia Reis de Mattos",
+    "caminhoArquivoMd": "posts/POST16.md",
+    "caminhoArquivoGithub": "https://github.com/najumattos/blog-najuliarmattos/blob/main/public/posts/POST16.md"
    }
 ]
