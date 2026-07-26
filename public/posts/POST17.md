@@ -1,5 +1,3 @@
-# Como a Inteligência Artificial Aprende
-
 ## 1. Introdução ao Aprendizado de Máquina
 
 A compreensão da Inteligência Artificial moderna exige entender a transição da lógica de regras para a lógica de padrões
