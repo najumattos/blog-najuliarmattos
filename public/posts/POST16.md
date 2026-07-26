@@ -1,6 +1,3 @@
-
-# Fundamentos da Inteligência Artificial
-
 ## 1. O que é Inteligência Artificial
 
 A **inteligência artificial** é um campo da ciência da computação que se dedica ao estudo e ao desenvolvimento de máquinas e programas computacionais capazes de **reproduzir o comportamento humano na tomada de decisões e na realização de tarefas** porém a complexidade em definir o que é Inteligência artificial começa pelo fato de que não existe um consenso nem mesmo para as duas palavras que compõem o termo: **"inteligência"** e **"artificial"**. No imaginário popular espera-se que a IA seja uma supermáquina que pense e aja exatamente como um humano. No entanto, a IA real é diferente e os pesquisadores dividem suas definições em quatro grandes escolas ou paradigmas (pensar/agir como humanos ou racionalmente), o que mostra que não há uma resposta única para o que ela é.
