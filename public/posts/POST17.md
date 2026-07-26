@@ -163,12 +163,19 @@ Diferente do pensamento humano ou de sistemas conectados em tempo real, os Grand
 -   **Data de Treino:** O modelo foi treinado com um conjunto de dados que termina em uma data específica.
 -   **Sem Acesso Posterior:** Isso significa que a IA não tem acesso a informações ou eventos que ocorreram após esse **"corte de conhecimento"**, a menos que tenha ferramentas externas acopladas.
 
-### 6.3 O conceito de Ghost Work (Trabalho Fantasma)
+### 6.3 O Mito da Imaterialidade
+Embora o uso da IA pareça instantâneo e "limpo", o sistema possui um "corpo" físico extenso.
 
-O termo **Ghost Work**, documentado por Mary Gray e Siddharth Suri, refere-se ao **trabalho humano invisível** que sustenta a IA, mas que não aparece na interface final do produto.
-
+-   **Início na Mineração:** Todo sistema de IA começa com a extração de **lítio e terras-raras**, fabricação de chips e construção de instalações industriais de enorme escala.
+-   **Decisões sem Informação:** O mito de que a computação é etérea faz com que usuários e empresas ignorem as externalidades reais (energia, água e trabalho) ao adotar soluções tecnológicas.
+-   **Densidade de Energia:** Um único rack de servidores modernos pode consumir energia equivalente a **10 ou 30 residências**.
+-   **Escala Global:** Projeta-se que data centers de IA consumam **500 TWh em 2026**, quase o consumo total anual de eletricidade do Brasil.
+-   **Pegada de Carbono:** Estima-se que treinar o GPT-3 emitiu 552 toneladas de CO2, o equivalente a **276 voos de ida e volta entre São Paulo e Nova York**.
+-   **Consumo Hídrico:** O processamento gera calor que exige resfriamento. Em 2022, a **Microsoft consumiu 6,4 bilhões de litros de água** e o **Google 5,6 bilhões**, o que gera conflitos em regiões com escassez hídrica.
+-   **Consultas Individuais:** Uma pergunta a um LLM consome de **10 a 30 vezes mais energia** do que uma busca tradicional no Google.
 -   **Plataformas de Crowdwork:** Grande parte dessa rotulagem é feita por trabalhadores em plataformas como a Amazon Mechanical Turk, que são pagos com **valores muito baixos** por tarefa.
--   **Exemplos de Tarefas:** Identificar objetos em fotos, digitar transcrições de áudio e marcar e-mails como spam são atividades manuais e repetitivas que alimentam os sistemas de IA antes de chegarem ao usuário.
+- **Extração de Dados:** Há conflitos éticos e judiciais sobre o uso de dados de artistas, jornalistas e acadêmicos coletados via _scraping_ sem consentimento.
+
 
 ### 6.4 Questões éticas e LGPD
 
@@ -200,6 +207,26 @@ Uma postura crítica exige que o usuário não se deixe seduzir pela forma como 
 
 Em suma, o uso responsável da IA na prática profissional consiste em tratar a tecnologia como um **sistema desenhado por humanos**, que herda tanto qualidades quanto preconceitos, exigindo supervisão constante e verificação rigorosa de seus resultados.
 
+## 7 Naturalização Tecnológica
+A naturalização é o processo pelo qual uma tecnologia se torna tão onipresente que passa a ser percebida como **invisível, inevitável e óbvia**.
+
+-   **Invisibilidade:** Quando um sistema funciona perfeitamente e está em todo lugar, o cérebro para de analisá-lo conscientemente para economizar energia, tornando as decisões desses sistemas (como feeds de notícias ou GPS) inquestionáveis.
+-   **Inscrições de Valores:** Segundo Bruno Latour, os objetos tecnológicos carregam "inscrições" — valores e escolhas de seus criadores que operam silenciosamente quando a tecnologia é naturalizada.
+-   **Tecnopólio:** Citando Neil Postman, o estágio onde a tecnologia se torna a própria fonte de legitimidade, fazendo com que resultados gerados por máquinas pareçam mais confiáveis do que os humanos.
+
+### 7.1 As Quatro Ilusões da IA
+O design das interfaces de IA oculta sua infraestrutura e limitações, gerando quatro crenças equivocadas nos usuários:
+
+1.  **Confiabilidade:** O usuário crê que a IA verifica fatos, mas ela gera textos estatisticamente plausíveis (**papagaios estocásticos**) e pode "alucinar" referências inexistentes.
+2.  **Neutralidade:** Crê-se na objetividade da máquina, mas ela herda vieses dos dados de treinamento que refletem desigualdades históricas.
+3.  **Gratuidade:** Ignoram-se os custos ambientais (energia e água) e humanos (_ghost work_ em condições precárias).
+4.  **Universalidade:** Acredita-se que a IA funciona igual para todos, mas modelos treinados majoritariamente em inglês (>90%) têm desempenho inferior em outros idiomas e contextos culturais, como o brasileiro.
+
+### 7.2 Vieses Algorítmicos
+Os vieses ocorrem quando os dados de treinamento refletem preconceitos históricos, e a IA, por meio de sua lógica de otimização, os reproduz em escala.
+
+### 7.3 A Prática da Desnaturalização
+Desnaturalizar a IA não significa rejeitar a tecnologia, mas desenvolver a **literacia crítica**. O primeiro passo é o "Reconhecer": identificar onde a IA está presente (mesmo em aplicativos comuns como Spotify e Google Maps) e questionar quais dados a alimentam, quem ela representa e quais objetivos ela está otimizando. Para profissionais de engenharia e tecnologia, essa análise deixa de ser um "complemento ético opcional" para se tornar uma **competência técnica fundamental**.
 
 ## Mapa Mental
 ```text
@@ -226,15 +253,26 @@ IA
 │       └── RLHF
 │
 └── Limitações e Uso Responsável
-    ├── Alucinações
-    ├── Corte de conhecimento
-    ├── Ghost Work
-    ├── LGPD
-    ├── Verificação de fontes
-    └── Avaliação crítica
+│   ├── Alucinações
+│   ├── Corte de conhecimento
+│   ├── O Mito da Imaterialidade
+│   ├── LGPD
+│   ├── Verificação de fontes
+│   ├── Avaliação crítica
+│   
+└── Naturalização Tecnológica    
+    ├── As Quatro Ilusões da IA
+    ├── Vieses Algorítmicos
+    ├── A Prática da Desnaturalização
 ```
+
+## Conclusão
+A Inteligência Artificial moderna evoluiu de sistemas baseados em regras para modelos capazes de aprender padrões estatísticos a partir de grandes volumes de dados. Embora os LLMs tenham ampliado significativamente as aplicações da IA, suas limitações técnicas, impactos sociais e questões éticas exigem uso crítico e responsável. Compreender como esses sistemas aprendem, suas restrições e seus custos é essencial para utilizá-los de forma consciente em contextos acadêmicos e profissionais.
+
 ## Referências
 -   **PLACCA, J. A.**  _Como a IA aprende_. São Paulo: Univesp, 2026. 12 p. (Série IA na Prática Acadêmica e Profissional, Quinzena 1, Módulo 2).
+-   **PLACCA, J. A.**  **O custo invisível da IA**. São Paulo: Univesp, 2026. 11 p. (Série IA na Prática Acadêmica e Profissional, Quinzena 1, Módulo 3).
+-   **PLACCA, J. A.**  **Quando se para de questionar: naturalização e vieses algorítmicos**. São Paulo: Univesp, 2026. 13 p. (Série IA na Prática Acadêmica e Profissional, Quinzena 1, Módulo 4).
 -   **ASSOCIATION FOR COMPUTING MACHINERY [ACM].**  _Fathers of the deep learning revolution receive ACM A.M. Turing Award_. ACM, 2019.
 -   **MITCHELL, T. M.**  _Machine learning_. New York: McGraw-Hill, 1997.
 -   **VASWANI, A. et al.**  _Attention is all you need_. _Advances in Neural Information Processing Systems_, v. 30, 2017
