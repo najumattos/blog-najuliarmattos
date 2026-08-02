@@ -142,6 +142,13 @@
     "autor": "Ana Julia Reis de Mattos",
     "caminhoArquivoMd": "posts/POST17.md",
     "caminhoArquivoGithub": "https://github.com/najumattos/blog-najuliarmattos/blob/main/public/posts/POST17.md"
+   },
+   {
+    "id": "18",
+    "titulo": "Pensamento Computacional",
+    "dataPostagem": "2026-08-02",
+    "autor": "Ana Julia Reis de Mattos",
+    "caminhoArquivoMd": "posts/POST18.md",
+    "caminhoArquivoGithub": "https://github.com/najumattos/blog-najuliarmattos/blob/main/public/posts/POST18.md"
    }
 ]
-
