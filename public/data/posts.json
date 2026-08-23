@@ -150,5 +150,13 @@
     "autor": "Ana Julia Reis de Mattos",
     "caminhoArquivoMd": "posts/POST18.md",
     "caminhoArquivoGithub": "https://github.com/najumattos/blog-najuliarmattos/blob/main/public/posts/POST18.md"
+   },
+   {
+    "id": "19",
+    "titulo": "Competências Profissionais na Era da IA",
+    "dataPostagem": "2026-08-23",
+    "autor": "Ana Julia Reis de Mattos",
+    "caminhoArquivoMd": "posts/POST19.md",
+    "caminhoArquivoGithub": "https://github.com/najumattos/blog-najuliarmattos/blob/main/public/posts/POST19.md"
    }
 ]
